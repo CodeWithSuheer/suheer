@@ -5,7 +5,7 @@ import "./Home.css";
 const HeroSection = () => {
   return (
     <>
-      <section className="relative isolate z-0 flex min-h-[90vh] items-center justify-center px-6 pt-10 lg:px-8">
+      <section className="relative isolate z-0 flex min-h-[70vh] items-center justify-center px-6 pt-10 lg:min-h-[90vh] lg:px-8">
         <div className="relative mx-auto max-w-3xl">
           <div className="absolute inset-x-0 -top-[4rem] -z-10 transform-gpu overflow-hidden blur-3xl md:-top-[20rem]">
             <svg
