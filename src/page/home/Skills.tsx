@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import "./Home.css";
-import Button from "../../components/Button";
+import { Link } from "react-scroll";
+
 const skillsData = [
   "React JS",
   "Node JS",
@@ -57,20 +58,16 @@ const Skills = () => {
           </ul>
         </div>
 
-        {/* <Link
-          to="experience"
+        <Link
+          to="projects"
           spy={true}
           smooth={true}
           duration={700}
           type="button"
           className="mt-10 cursor-pointer"
         >
-          <span className="project_btn">EXPERIENCE</span>
-        </Link> */}
-
-        <div className="button_box mt-7 lg:mt-7">
-          <Button text="EXPERIENCE" />
-        </div>
+          <span className="project_btn">PROJECTS</span>
+        </Link>
       </section>
     </>
   );
