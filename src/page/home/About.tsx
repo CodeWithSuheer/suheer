@@ -118,15 +118,12 @@ const About: React.FC<AboutText> = ({ text }) => {
                 ))}
               </motion.div>
 
-              <p
-                className="text-md text-start text-gray-600 md:text-center lg:text-lg"
-                data-aos="zoom-out-up"
-              >
-                A motivated Full Stack Developer with 1+ years of experience,
-                having strong command over HTML, CSS and JavaScript. Highly
-                experienced in developing websites and web applications with
-                Bootstrap, Tailwind, React JS and Node JS. Adept in developing
-                user interfaces, testing and debugging applications 🚀
+              <p className="text-md text-start text-gray-600 md:text-center md:text-lg">
+                A MERN stack developer with a BSCS degree and a solid foundation
+                in web development. Over the past year, I've sharpened my skills
+                in React JS, Node JS, Express, MongoDB, Tailwind, and Bootstrap.
+                I specialize in creating scalable solutions, writing clean code,
+                and staying updated with the latest technologies. 🚀
               </p>
             </div>
             <div className="mt-8 flex items-center justify-start md:justify-center">

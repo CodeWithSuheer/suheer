@@ -33,7 +33,7 @@ const Skills = () => {
   return (
     <>
       <section
-        id="marquee"
+        id="skills"
         className="mx-auto flex min-h-[80vh] flex-col items-center justify-center pb-8 text-center"
       >
         <h1 className="hero-title title-font mb-4 w-full pb-0 pt-12 text-4xl font-bold lg:pb-4 lg:pt-4 lg:text-5xl">
