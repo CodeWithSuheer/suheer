@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Suheer_CV from "../../../Suheer_CV.pdf";
-import { cn } from "../../../@/lib/utils";
-import AnimatedGridPattern from "../../../@/components/magicui/animated-grid-pattern";
 
 interface AboutText {
   text: string;
@@ -65,18 +63,8 @@ const About: React.FC<AboutText> = ({ text }) => {
   return (
     <>
       <section className="relative isolate z-0 -mt-14 mb-24 px-6 pt-0 lg:px-8">
-        <AnimatedGridPattern
-          numSquares={30}
-          maxOpacity={0.1}
-          duration={3}
-          repeatDelay={1}
-          className={cn(
-            "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
-            "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
-          )}
-        />
         <div ref={ref} className="relative mx-auto max-w-2xl py-2">
-          {/* <div className="absolute inset-x-0 -top-[4rem] -z-10 transform-gpu overflow-hidden blur-3xl md:-top-[20rem]">
+          <div className="absolute inset-x-0 -top-[4rem] -z-10 transform-gpu overflow-hidden blur-3xl md:-top-[20rem]">
             <svg
               className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
               viewBox="0 0 1155 678"
@@ -101,7 +89,7 @@ const About: React.FC<AboutText> = ({ text }) => {
                 </linearGradient>
               </defs>
             </svg>
-          </div> */}
+          </div>
           <div className="text-center">
             <div className="max-w-7xl md:mx-auto">
               <h3 className="mb-1 text-start text-2xl font-semibold text-gray-500 md:text-center">
