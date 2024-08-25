@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import "./Home.css";
+import BlurFade from "../../../@/components/magicui/blur-fade";
 
 const HeroSection = () => {
   return (
@@ -33,29 +34,35 @@ const HeroSection = () => {
             </svg>
           </div>
           <div className="text-center">
-            <h1 className="hero-title text-4xl font-bold sm:text-6xl">
-              Suheer Zahid
-            </h1>
-            <p className="text-md mb-12 mt-3 max-w-2xl leading-6 text-gray-700 lg:mt-6 lg:text-lg xl:leading-8">
-              I'm a MERN stack developer with a passion for solving complex
-              problems and bringing ideas to life through code. With a year of
-              hands-on experience, I've built web applications that are both
-              functional and user-friendly. Committed to clean code and seamless
-              experiences. 🚀
-            </p>
+            <BlurFade delay={0.25} inView>
+              <h1 className="hero-title text-4xl font-bold sm:text-6xl">
+                Suheer Zahid
+              </h1>
+            </BlurFade>
+            <BlurFade delay={0.25 * 3} inView>
+              <p className="text-md mb-12 mt-3 max-w-2xl leading-6 text-gray-700 lg:mt-6 lg:text-lg xl:leading-8">
+                I'm a MERN stack developer with a passion for solving complex
+                problems and bringing ideas to life through code. With a year of
+                hands-on experience, I've built web applications that are both
+                functional and user-friendly. Committed to clean code and
+                seamless experiences. 🚀
+              </p>
+            </BlurFade>
 
-            <div className="">
-              <Link
-                to="skills"
-                spy={true}
-                smooth={true}
-                duration={700}
-                type="button"
-                className="hero_button cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-              >
-                <span>SKILLS</span>
-              </Link>
-            </div>
+            <BlurFade delay={0.25 * 5} inView>
+              <div className="">
+                <Link
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  duration={700}
+                  type="button"
+                  className="hero_button cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                >
+                  <span>SKILLS</span>
+                </Link>
+              </div>
+            </BlurFade>
           </div>
         </div>
       </section>

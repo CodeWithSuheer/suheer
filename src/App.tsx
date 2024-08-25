@@ -1,6 +1,9 @@
+import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Loader from "./components/Loader";
 import "./App.css";
-import Home from "./page/home/Home";
+const Home = React.lazy(() => import("./page/home/Home"));
+// import Home from "./page/home/Home";
 import { FaWhatsapp } from "react-icons/fa";
 import Navbar from "./components/Navbar";
 
@@ -10,7 +13,14 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Home />
+              </Suspense>
+            }
+          />
         </Routes>
 
         <a
