@@ -77,7 +77,7 @@
     margin-inline: 6px;
     position: relative;
     overflow: hidden;
-    border: 2px solid var(--color);
+    border: 1.5px solid #5e5e5e;
     transition: color .5s;
     z-index: 1;
     border-radius: 6px;
