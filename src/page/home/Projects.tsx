@@ -14,10 +14,11 @@ let brand1 =
   "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/brand1.png?v=1721679067";
 let brand2 =
   "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/brand2.png?v=1721679067";
-let ammar1 =
-  "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ammar1.png?v=1721682186";
-let ammar2 =
-  "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/ammar2.png?v=1721682186";
+let octa1 =
+  "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/octa1.png?v=1725388698";
+let octa2 =
+  "https://cdn.shopify.com/s/files/1/0704/6378/2946/files/octa2.png?v=1725388691";
+
 
 interface CardType {
   id: number;
@@ -57,11 +58,11 @@ const cards: CardType[] = [
   },
   {
     id: 4,
-    name: "Ammar Forte",
-    language: "Next JS 14, Tailwind CSS",
-    url: "https://www.ammarforte.com",
+    name: "Octa Tech Solutions",
+    language: "React JS, Node JS, Express, Redux Toolkit",
+    url: "https://www.octatechsolution.com",
     title: "Title 1",
-    cover: [ammar1, ammar2],
+    cover: [octa1, octa2],
   },
 ];
 
